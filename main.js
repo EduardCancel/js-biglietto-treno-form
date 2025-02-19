@@ -15,8 +15,8 @@ const costTravelEl = document.getElementById('cost-travel')
 const distanceEl = document.getElementById('distance')
 const ageEl = document.getElementById('age')
 console.log(distanceEl, ageEl);
-const totalTravel = distanceEl * 0.21;
-console.log(totalTravel);
+/* const totalTravel = distanceEl.value * 0.21;
+console.log(totalTravel); */
 
 costTravelEl.addEventListener('submit',function(c){
     c.preventDefault();
@@ -26,19 +26,22 @@ costTravelEl.addEventListener('submit',function(c){
     const ageVl= ageEl.value
     console.log(ageVl);
 
-/*  if (ageEl < 18){
+    const totalTravel = distanceEl.value * 0.21;
+    console.log(totalTravel);
 
-        price = cost_voyage - ((cost_voyage / 100) * 20).toFixed(2);
-        console.log(price_20);
+    if (ageVl < 18){
+
+        price = totalTravel - ((totalTravel / 100) * 20).toFixed(2);
+        console.log(price);
         
-    } else if ( user_age >= 65) {
+    } else if ( ageVl >= 65) {
     
-        const price_20 = cost_voyage - ((cost_voyage / 100) * 20).toFixed(2);
-        console.log(price_20);
+        price = totalTravel - ((totalTravel / 100) * 20).toFixed(2);
+        console.log(price);
     
     } else{
-    console.log(cost_voyage);
-    } */
+    console.log(totalTravel);
+    } 
 })
 
 
