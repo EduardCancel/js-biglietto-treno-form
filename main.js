@@ -18,16 +18,19 @@ console.log(distanceEl, ageEl);
 /* const totalTravel = distanceEl.value * 0.21;
 console.log(totalTravel); */
 
+
 costTravelEl.addEventListener('submit',function(c){
     c.preventDefault();
+
     const distanceVl = distanceEl.value
     console.log(distanceVl);
-
+    
     const ageVl= ageEl.value
     console.log(ageVl);
 
     const totalTravel = distanceEl.value * 0.21;
     console.log(totalTravel);
+
 
     if (ageVl < 18){
 
@@ -42,6 +45,7 @@ costTravelEl.addEventListener('submit',function(c){
     } else{
     console.log(totalTravel);
     } 
+
 })
 
 
