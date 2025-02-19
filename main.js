@@ -10,13 +10,23 @@ MILESTONE 1:
 Iniziamo implementando il programma senza alcuna estetica: usando esclusivamente due input e un bottone (non stilizzati), realizziamo le specifiche scritte sopra. La risposta finale (o output) sarà anch’essa da scrivere in console.
 
 */
+
+// Select the form input
 let price
+
 const costTravelEl = document.getElementById('cost-travel')
 const distanceEl = document.getElementById('distance')
 const ageEl = document.getElementById('age')
 console.log(distanceEl, ageEl);
 /* const totalTravel = distanceEl.value * 0.21;
 console.log(totalTravel); */
+
+// Select the card elements
+const cardPassenger = document.querySelector('.container .row .passenger')
+const cardAge = document.querySelector('.container .row .offert .change')
+const cardCarozza = document.querySelector('.container .row .carozza .change')
+const cardCodice = document.querySelector('.container .row .codice .change')
+const cardBiglietto = document.querySelector('.container .row .biglietto .change')
 
 
 costTravelEl.addEventListener('submit',function(c){
@@ -43,8 +53,15 @@ costTravelEl.addEventListener('submit',function(c){
         console.log(price);
     
     } else{
-    console.log(totalTravel);
+    price = totalTravel
     } 
+
+    // update card's value
+
+    cardCarozza.innerHTML = Math.floor(Math.random() * 9) +1;
+     cardCodice.innerHTML = Math.floor(Math.random() * 9) +1;
+    cardBiglietto.innerHTML = price
+    cardAge.innerHTML = ageEl.value
 
 })
 

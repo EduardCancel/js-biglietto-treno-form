@@ -9,87 +9,103 @@
     <title>Document</title>
 </head>
 <body>
-
-<form action="" id="cost-travel">
-
-<div class="container">
-    <div class="row">
-        <div class="col-4">
-            <div class="mb-3">
-                <label for="distance" class="form-label">How many kilometers do you want to travel?</label>
-                <input
-                    type="number"
-                    class="form-control"
-                    name="distance"
-                    id="distance"
-                    aria-describedby="helpId"
-                    placeholder=""
-                />
-                <small id="kilometersHelper" class="form-text text-muted">Type your kilometers above</small>
-            </div>
-        </div>
-        <div class="col-4">
-            <div class=" mb-3">
-                <label for="age" class="form-label ">How old are you</label>
-                <input
-                    type="number"
-                    class="form-control"
-                    name="age"
-                    id="age"
-                    aria-describedby="helpId"
-                    placeholder=""
-                />
-                <small id="kilometersHelper" class="form-text text-muted ">Type your age above</small>
-            </div>
-        </div>
-        <div class="col-3">
-            <div class="mb-3">
-                <label for="age group" class="form-label">Select age Group</label>
-                <select
-                    class="form-select form-select-lg"
-                    name="age group"
-                    id="age group"
-                >
-                    <option selected>Major</option>
-                    <option value="">Elderly</option>
+    <H2 class="text-center mb-3 text-light">CALCOLA IL PREZZO DEL TUO BIGLIETTO</H2>
+<div class="container bg-primary-subtle ">
+    <form action="" id="cost-travel">
+        <div class="container  p-4">
+            <div class="row">
+                <div class="col-4">
+                    <div class="mb-3">
+                        <label for="distance" class="form-label">How many kilometers do you want to travel?</label>
+                        <input
+                            type="number"
+                            class="form-control"
+                            name="distance"
+                            id="distance"
+                            aria-describedby="helpId"
+                            placeholder=""
+                        />
+                        <small id="kilometersHelper" class="form-text text-muted">Type your kilometers above</small>
+                    </div>
+                </div>
+                <!-- Column kilometers -->
+                <div class="col-4">
+                    <div class=" mb-3">
+                        <label for="age" class="form-label ">How old are you</label>
+                        <input
+                            type="number"
+                            class="form-control"
+                            name="age"
+                            id="age"
+                            aria-describedby="helpId"
+                            placeholder=""
+                        />
+                        <small id="age" class="form-text text-muted ">Type your age above</small>
+                    </div>
+                </div>
+                <!-- Column Age -->
+                <div class="col-3">
+                    <div class="mb-3">
+                        <label for="age group" class="form-label">Select age Group</label>
+                        <select
+                            class="form-select form-select-lg"
+                            name="age group"
+                            id="age group"
+                        >
+                            <option selected>Major</option>
+                            <option value="">Elderly</option>
+                            
+                        </select>
+                    </div>
                     
-                </select>
+                </div>
+                <!-- Column select age group -->
             </div>
+            <div class="row ">
+                <div class="col-12 text-center">
+                    <button class="btn btn-primary" type="submit">Genera<i class="fa fa-group" aria-hidden="true"></i></button>
+                    <button class="btn btn-primary mx-3" type="submit">Annulla<i class="fa fa-group" aria-hidden="true"></i></button>
+                </div>
+            </div>
+            <!-- Button -->
             
         </div>
-    </div>
-    <div class="row ">
-        <div class="col-12 text-center">
-            <button class="btn btn-primary" type="submit">Genera<i class="fa fa-group" aria-hidden="true"></i></button>
-            <button class="btn btn-primary mx-3" type="submit">Annulla<i class="fa fa-group" aria-hidden="true"></i></button>
-        </div>
-    </div>
-    
-</div>
 
-<div class="container mt-5">
-    <div class="card mb-3">
-        <div class="row">
-          <div class="col-md-4">
-            <p>
+        <h2 class="mt-5 text-center text-light">IL TUO BIGLIETTO</h2>
+        <div class="container  ">
+            <h4>DETTAGLIO PASSEGGERI</h4>
+            <div class="row">
+                <div class="col-4 mt-2 bg-info passenger" >
+                    <h5>NOME PASSEGGERO</h5>
+                    <p>Eduard Cancel</p>
+                </div>
+                <div class="col-2 mt-2 offert" >
+                    <p><strong>Age</strong></p>
+                    <p class="change">-</p>
+                </div>
+                <div class="col-2 mt-2 carozza" >
+                    <p><strong>Carrozza</strong></p>
+                    <p class="change">-</p>
+                </div>
+                <div class="col-2 mt-2 codice change" >
+                    <p><strong>Codice CP </strong></p>
+                    <p class="change">-</p>
+                </div>
+                <div class="col-2 mt-2 biglietto " >
+                    <p><strong>Costo Biglietto</strong></p>
+                    <p class="change text-center change">-</p>
+                </div>
 
-            </p>
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
             </div>
-          </div>
         </div>
-      </div>
-</div>
-    
-    <!-- tetx -->
+        <!-- Card container -->
+            
+            <!-- tetx -->
+                
         
-
-</form>
+        </form>
+        
+</div>
 
 </div>
     <script src="./main.js"></script>
